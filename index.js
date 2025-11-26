@@ -9,6 +9,7 @@ Instructions:
     * Double-check for any missing or extra characters that might be disrupting the code's structure.
 */
 let message = "Hello, World!";
+
 //console.log(message; // SyntaxError: Unexpected token ';'
 
 // 2. ReferenceError: myVariable is not defined
