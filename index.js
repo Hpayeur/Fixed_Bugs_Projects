@@ -8,7 +8,13 @@ Instructions:
     * Ensure that all statements are properly terminated and that function calls have matching parentheses.
     * Double-check for any missing or extra characters that might be disrupting the code's structure.
 */
+
+
+
 console.log("Welcome Everyone!");
+//My Notes: The error occures when a character is out of place or missing. In this case a ; was put in the wrong spot. Before it was written as let message="Hello World". I changed it to console.log("Welcome Everyone!"); to fix the error.
+
+
 
 //console.log(message; // SyntaxError: Unexpected token ';'
 
@@ -31,8 +37,16 @@ Instructions:
     * Remember that only functions can be called using parentheses `()`.
     * If you need to use the variable greeting, then use it as a variable, not a function.
 */
+
+
+
 const greet = (Greeting = 'hello', Name = 'there') => `${Greeting}, ${Name}`;
 console.log (greet('Hello'));
+//My Notes: The first Error occurs when the javascript can't find the varible. The second Error occurs when it is either misspelled or when the value is overwritten the function varible. 
+// Before it was written as const greeting = "Hello"; I changed it to const greet = (Greeting = 'hello', Name = 'there') => `${Greeting}, ${Name}`; to fix the error.
+
+
+
 //greeting(); // TypeError: greeting is not a function
 
 // 4. TypeError: Cannot read property 'property' of undefined
@@ -43,9 +57,15 @@ Instructions:
     * Make sure the variable has been assigned an object before you attempt to access its properties.
     * If you expect the variable to hold an object, you may need to add code that assigns an object to the variable.
 */
+
+
+
 const myObject ={Name: 'Ember', Age: {years: 35}};
 console.log(myObject.age?.years); 
 console.log(myObject.address?.street); undefined
+//My Notes:Before it was written as let obj;
+
+
 
 //console.log(obj.property); // TypeError: Cannot read property 'property' of undefined
 
@@ -57,8 +77,14 @@ Instructions:
     * Consider using template literals or `JSON.stringify()` to create a string representation of the object.
     * Remember that the console.log() function can take multiple arguments, and will display them all.
 */
+
+
+
 const user= {Name: 'Ember', age: 35};
 console.log("user info: " + JSON.stringify(user));
+//My Notes:Before it was written as const user   name: "John",  age: 30,};
+
+
 
 //console.log("User info: " + user); // Output: User info: [object Object]
 
@@ -71,6 +97,12 @@ Instructions:
     * Use functions like `parseInt()` or `parseFloat()` to convert strings to numbers.
     * Be aware that if the string that is being converted to a number, is not a number, then the result will be NaN.
 */
+
+
+
 console.log(Number("100") + 5); // 15
 const num = "100";
+//My Notes:Before it was written as let num = "10";
+
+
 //console.log(num + 5); // "105"
