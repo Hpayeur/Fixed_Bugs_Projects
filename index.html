@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Incorrect: Incorrect file path -->
 <link rel="stylesheet" href="style.css">
+<!-- My Note: The style link was spelled incorrectly and wasn't connected properly-->
+
 <!-- Console error: Failed to load resource: net::ERR_FILE_NOT_FOUND -->
 
     <title>Debugging 101</title>
@@ -14,6 +16,7 @@
 
 <!-- Look at the name of this class, is it in the CSS File? -->
     <div class="container">
+      <!--My Note: It was in container spelled incorrectly followed by messing the beginning of the p tag!-->
       <h1>Welcome to Debugging 101!</h1>
      <p>Let's Get started and Learn how to debug our code.</p>
     </div>
@@ -25,25 +28,30 @@
   <p>This is a Paragraph that is inside of the Div!</p>
 </div>
 <!-- Console warning: Unclosed tag -->
+<!--My Note: Missing closing </div> tag and </p> Tag-->
+
 
 <!-- Incorrect: style attribute missing quotation marks -->
 <p style="color: red;">Hello this text is red!</p>
 <!-- Console error: Invalid or unexpected token -->
+ <!-- <My Note: <p Style="color: red;" was missing at the beginning of the p tag!-->
 
 <!-- React-specific issue with incorrect attribute name -->
- <div class="Container">Hello Everyone and Hello Fantastic World</div>
+ <div class="container">Hello Everyone and Hello Fantastic World</div>
+ <!--My Note: At the beginning of the div tag it was orginally spelled incorrectly like <div clss= When it was supposed to be class= -->
 <!-- Console error in React: Unknown DOM property "classnme" -->
 
 
 <!-- Incorrect: Loading HTTP resource on an HTTPS page -->
 <!-- update this image to http://placehold.co/400x400 -->
-<img src="http://placehold.co/400x400" alt="Example Image">
+<img src="http://placehold.co/400x400" alt="Example Image" />
 <!-- Console error: Mixed Content: The page was loaded over HTTPS, but requested an insecure image -->
+ <!-- My Note: Updated the Image to what was asked followed by /> -->
 
 
 
     <!-- include the JS file in the src string below this line -->
+     <!--My Note: "Index.js"--->
      <script src="index.js"></script>
-    <script src=""></script>
   </body>
 </html>

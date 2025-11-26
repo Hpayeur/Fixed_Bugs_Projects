@@ -2,6 +2,8 @@ p {
   font-size: 1.2em; /* Console warning: Invalid property value */
 }
 
+/* My Notes: largeer was spelt incorrectly. I fixed it to larger then changed it to the size 1.2em*/
+
 h1 {
   font-size: 23px;
   color: purple;
@@ -12,8 +14,10 @@ h1 {
   width: 500px;
   height: 500px;
   /* background should be the same as #output */
-  background-color: #f3f3f3;
+  background-color: #f0f0f0;
 }
+
+/*My Notes: The backgriund color was to long i had to get rid of it changing it to the six letters and numbers*/
 
 #output {
   color: #000;

@@ -8,7 +8,7 @@ Instructions:
     * Ensure that all statements are properly terminated and that function calls have matching parentheses.
     * Double-check for any missing or extra characters that might be disrupting the code's structure.
 */
-let message = "Hello, World!";
+console.log("Welcome Everyone!");
 
 //console.log(message; // SyntaxError: Unexpected token ';'
 
@@ -31,7 +31,8 @@ Instructions:
     * Remember that only functions can be called using parentheses `()`.
     * If you need to use the variable greeting, then use it as a variable, not a function.
 */
-const greeting = "Hello";
+const greet = (Greeting = 'hello', Name = 'there') => `${Greeting}, ${Name}`;
+console.log (greet('Hello'));
 //greeting(); // TypeError: greeting is not a function
 
 // 4. TypeError: Cannot read property 'property' of undefined
@@ -42,7 +43,10 @@ Instructions:
     * Make sure the variable has been assigned an object before you attempt to access its properties.
     * If you expect the variable to hold an object, you may need to add code that assigns an object to the variable.
 */
-let obj;
+const myObject ={Name: 'Ember', Age: {years: 35}};
+console.log(myObject.age?.years); 
+console.log(myObject.address?.street); undefined
+
 //console.log(obj.property); // TypeError: Cannot read property 'property' of undefined
 
 // 5. Incorrect Object Concatenation
@@ -53,10 +57,8 @@ Instructions:
     * Consider using template literals or `JSON.stringify()` to create a string representation of the object.
     * Remember that the console.log() function can take multiple arguments, and will display them all.
 */
-const user = {
-    name: "John",
-    age: 30,
-};
+const user= {Name: 'Ember', age: 35};
+console.log("user info: " + JSON.stringify(user));
 
 //console.log("User info: " + user); // Output: User info: [object Object]
 
@@ -69,5 +71,6 @@ Instructions:
     * Use functions like `parseInt()` or `parseFloat()` to convert strings to numbers.
     * Be aware that if the string that is being converted to a number, is not a number, then the result will be NaN.
 */
-let num = "10";
+console.log(Number("100") + 5); // 15
+const num = "100";
 //console.log(num + 5); // "105"
