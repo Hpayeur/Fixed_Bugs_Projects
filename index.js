@@ -63,7 +63,8 @@ Instructions:
 const myObject ={Name: 'Ember', Age: {years: 35}};
 console.log(myObject.age?.years); 
 console.log(myObject.address?.street); undefined
-//My Notes:Before it was written as let obj;
+//My Notes: Is when the javascript cant't access a property of a variable that holds undefined.
+// Before it was written as let obj; i changed it to const myObject ={Name: 'Ember', Age: {years: 35}}; to fix the error.
 
 
 
@@ -82,7 +83,8 @@ Instructions:
 
 const user= {Name: 'Ember', age: 35};
 console.log("user info: " + JSON.stringify(user));
-//My Notes:Before it was written as const user   name: "John",  age: 30,};
+//My Notes: concatenating an object with a string using the + operator causes javascript to convert the object to its default string representation which is [object Object].
+// Before it was written as const user   name: "John",  age: 30,}; i changed it to const user= {Name: 'Ember', age: 35}; console.log("user info: " + JSON.stringify(user)); to fix the error.
 
 
 
@@ -100,9 +102,10 @@ Instructions:
 
 
 
-console.log(Number("100") + 5); // 15
+console.log(Number("100") + 5); 
 const num = "100";
-//My Notes:Before it was written as let num = "10";
+//My Notes: occurs to a type mismatches to convert a string to a number without a good format.
+// Before it was written as let num = "10"; i changed it to console.log(Number("100") + 5); const num = "100"; to fix the error.
 
 
 //console.log(num + 5); // "105"
